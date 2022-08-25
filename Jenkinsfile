@@ -29,7 +29,7 @@ stages
  {
  echo 'zipping '
 
- 
+ sh ' mv  *war /var/lib/jenkins/jobs/PackingwarFile/builds/$BUILD_NUMBER' 
 
 
 }
