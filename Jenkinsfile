@@ -29,6 +29,9 @@ stages
  {
  echo 'zipping '
 
+ sh 'cd target'
+ sh 'zip -r Calculator.zip *.war'
+
 
 }
 
