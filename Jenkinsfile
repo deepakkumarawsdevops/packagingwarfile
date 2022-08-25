@@ -14,7 +14,7 @@ stages
  echo 'Building'
 
 
- sh 'mvn package'
+ sh 'mvn package -Dv=${BUILD_NUMBER}'
  sh 'mvn install'
 
 
