@@ -29,7 +29,8 @@ stages
  {
  echo 'zipping '
  sh 'mv target/*.war /var/lib/jenkins/jobs/PackingwarFile/builds/$BUILD_NUMBER'
- sh ' ls ' 
+ sh ' zip -r Cal$BUILD_NUMBER /var/lib/jenkins/jobs/PackingwarFile/builds/$BUILD_NUMBER'
+
 
 
 }
