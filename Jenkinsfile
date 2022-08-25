@@ -32,9 +32,10 @@ stages
  
   dir('/var/lib/jenkins/jobs/PackingwarFile/builds/$BUILD_NUMBER') 
   {
-      sh 'pwd'
+      sh 'ls'
 
-      sh 'zip -r Cal$BUILD_NUMBER.zip *.war'
+      
+      
       }
 
 }
