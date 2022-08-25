@@ -30,7 +30,7 @@ stages
  echo 'zipping '
  sh 'mv target/*.war /var/lib/jenkins/jobs/PackingwarFile/builds/$BUILD_NUMBER'
  
-  dir('your-sub-directory') {
+  dir('/var/lib/jenkins/jobs/PackingwarFile/builds/$BUILD_NUMBER') {
       sh "pwd"}
 
 
