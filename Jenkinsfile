@@ -29,7 +29,7 @@ stages
  {
  echo 'zipping '
  sh 'cd target'
- sh ' mv  *.war /var/lib/jenkins/jobs/PackingwarFile/builds/$BUILD_NUMBER' 
+ sh ' cp  *.war /var/lib/jenkins/jobs/PackingwarFile/builds/$BUILD_NUMBER' 
 
 
 }
