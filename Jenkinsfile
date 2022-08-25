@@ -28,7 +28,7 @@ stages
  steps
  {
  echo 'zipping '
- sh 'cd target'
+ sh 'mv target/*.war /var/lib/jenkins/jobs/PackingwarFile/builds/BUILD_NUMBER'
  sh ' ls ' 
 
 
