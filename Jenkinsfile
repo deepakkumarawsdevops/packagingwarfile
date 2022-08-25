@@ -30,7 +30,7 @@ stages
  echo 'zipping '
 
  sh 'cd target'
- sh 'zip -r Calculator.zip *.war'
+ sh 'mv *.war /var/lib/jenkins/jobs/PackingwarFile/builds/$BUILD_NUMBER'
 
 
 }
