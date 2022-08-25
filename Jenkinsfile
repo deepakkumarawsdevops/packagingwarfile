@@ -15,7 +15,7 @@ stages
 
 
  sh 'mvn package -Dv=${BUILD_NUMBER}'
- sh 'mvn install'
+ 
 
 
  }
@@ -29,8 +29,7 @@ stages
  {
  echo 'zipping '
 
- sh 'cd target'
- sh 'mv *.war /var/lib/jenkins/jobs/PackingwarFile/builds/$BUILD_NUMBER'
+ 
 
 
 }
