@@ -33,7 +33,7 @@ stages
  dir('var/lib/jenkins/jobs/PackingwarFile/builds/')
 
  {
-  sh 'cd $BUILD_NUMBER'
+  
   sh 'pwd'
   sh 'ls'
 
