@@ -28,7 +28,10 @@ stages
  steps
  {
  echo 'zipping '
- sh'mkdir $BUILD_NUMBER'
+ dir('target')
+ {
+ sh 'zip -r Cal$BUILD_NUMBER.zip *.war'
+} 
  sh 'mv target/*.war /var/lib/jenkins/jobs/PackingwarFile/builds/$BUILD_NUMBER'
 
  dir('/var/lib/jenkins/jobs/PackingwarFile/builds/')
@@ -40,6 +43,8 @@ stages
 
   
  }
+
+ 
  
  
   
